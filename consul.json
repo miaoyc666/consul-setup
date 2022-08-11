@@ -1,0 +1,25 @@
+{
+  "datacenter": "dc",
+  "bind_addr": "192.168.1.100",
+  "client_addr": "0.0.0.0",
+  "data_dir": "/var/lib/consul",
+  "log_level": "INFO",
+  "ui": true,
+  "server": true,
+  "rejoin_after_leave": true,
+  "encrypt": "S95eFU0Pp09/XZKGxLfR/w==",
+  "bootstrap_expect":3,
+  "retry_join": [
+    "hostname1.myc.ink",
+    "hostname2.myc.ink",
+    "hostname3.myc.ink"
+  ],
+  "acl":{
+    "enabled":true,
+    "default_policy":"deny",
+    "enable_token_persistence":true,
+    "tokens":{
+      "master":"369f6da8-15ea-467f-944b-19903291802e"
+    }
+  }
+}
